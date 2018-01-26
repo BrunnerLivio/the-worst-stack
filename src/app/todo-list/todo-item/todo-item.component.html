@@ -1,0 +1,7 @@
+<div>
+  <input type="checkbox" [checked]="todo.checked" (change)="todo.checked = !todo.checked" />
+  <input type="text" [(ngModel)]="todo.name" />
+  <button (click)="remove.emit({todo: todo})">
+    Remove
+  </button>
+</div>
